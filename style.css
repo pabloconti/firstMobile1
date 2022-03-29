@@ -1,0 +1,110 @@
+/*
+CONVENCION DE ESTILOS: 
+1. Posicionamiento
+2. Modelo de caja (Box Model)
+3. Tipografía
+4. Visuales
+5. Otros
+*/
+
+:root{
+    /*Colores*/
+    --bitcoin-orange:#F7931A;
+    --soft-orange: #FFE9D5;
+    --warm-black: #201E1C;
+    --warm-black1: #282623;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+    --blue: #0C8AFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    gap: 40px;
+    height: 330px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+}
+header img{
+    padding-top: 30px;
+}
+header h1{
+    text-align: center;
+    color: var(--just-white);
+    font-size: 24px;
+    font-family: "DM Sans";
+    font-weight: 700;
+    line-height: 26px;
+}
+
+header p{
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+        color: var(--off-white);
+
+}
+
+.header--tittle-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+}
+
+.header--button{
+    display: flex;
+    position: absolute;
+    top: 270px;
+    margin-top: 35px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 230px;
+    height: 50px;
+    text-decoration: none;
+    background-color: #FAF8F7;
+    box-shadow: 0px 4px 8px 0px #59491E29;
+
+}
+
+.header--button a{
+    text-decoration: none;
+    color: var(--warm-black);
+
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg');
+}

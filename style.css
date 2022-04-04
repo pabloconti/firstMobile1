@@ -108,3 +108,81 @@ header p{
     margin-left: 10px;
     background-image: url('./assets/icons/down-arrow.svg');
 }
+
+/*SECTION 1*/
+
+.tasas{
+    height: 910px;
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.tasas--bitcoin-img{
+    width: 195px;
+    height: 195px;
+    background-image: url('./assets/img/Bitcoin.svg');
+    margin-top: 70px;
+
+}
+
+.tasas h2{
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /*tipografia*/
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.tasas p{
+
+    /*tipografia*/
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #757575;
+
+}
+
+.tasas h3 {
+
+    /*tipografia*/
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--bitcoin-orange);
+
+}
+
+.tasas--grid-corredoras{
+    display: grid;
+    height: 250px;
+    width: 100%;
+    background-color: #0C8AFF;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-corredoras--data{
+    display: grid;
+    width: 50%;
+    height: 100%;
+    background-color: #F7931A;
+}
+
+

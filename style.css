@@ -109,7 +109,7 @@ header p{
     background-image: url('./assets/icons/down-arrow.svg');
 }
 
-/*SECTION 1*/
+/*Section 1*/
 
 .tasas{
     height: 910px;
@@ -170,6 +170,84 @@ header p{
 
 }
 
+.tasas--flex-corredoras{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    flex-direction: row;
+}
+
+.derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
+    margin-right: 0px;
+}
+
+.derecha span{
+    display: inline-block;
+    height: 12px;
+    width: 9px;
+    background-image: url('./assets/icons/right-arrow.svg');
+}
+
+.flex-corredoras--tabla{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    width: 60%;
+    background-color: antiquewhite;
+    border: 1px solid #7575753a;
+
+}
+
+.grid-item{
+    display: flex;
+    background-color: var(--just-white);
+    border: 1px solid #7575753a;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.grid-item p{
+    height: 19px;
+    width: 77px;
+    left: 12px;
+    top: 10px;
+    text-align: center;
+
+}
+
+.grid-item--price span{
+    display: inline-block;
+    margin-left: 10px;
+    width: 17px;
+    height: 17px;
+    background-image: url('./assets/icons/trending-up.svg');
+}
+
+
+.izquierda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(-1);
+    width: 20%;
+    
+}
+
+.izquierda span{
+    display: inline-block;
+    background-image: url('./assets/icons/right-arrow.svg');
+    height: 12px;
+    width: 9px;
+
+}
 .tasas--grid-corredoras{
     display: grid;
     height: 250px;
@@ -184,5 +262,3 @@ header p{
     height: 100%;
     background-color: #F7931A;
 }
-
-

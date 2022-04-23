@@ -262,3 +262,82 @@ header p{
     height: 100%;
     background-color: #F7931A;
 }
+
+/*Section 2*/
+
+.prestaciones{
+    height: 910px;
+    background-color: var(--warm-black);
+}
+
+.prestaciones h2{
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--just-white);
+    padding: 20px 0px 20px 0px;
+}
+
+.prestaciones--p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#808080;
+}
+
+.prestaciones--tarjetas{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    padding: 30px;
+}
+
+.tarjetas--grid-item{
+    display: flex;
+    flex-direction: column;
+    height: 152px;
+    background-color: var(--warm-black1);
+    box-shadow: 0px 4px 8px 0px #00000029;
+    border-radius: 4px;
+}
+
+.tarjetas_grid-item--clock{background-image: url(/assets/icons/clock.svg);}
+
+.tarjetas_grid-item--eye{background-image: url(/assets/icons/eye.svg);}
+
+.tarjetas_grid-item--dollar{background-image: url(/assets/icons/dollar-sign.svg);}
+
+.tarjetas_grid-item--tick{background-image: url(/assets/icons/check-circle.svg);} 
+
+.tarjetas--grid-item span{
+    width: 24px;
+    height: 24px;
+    align-self: flex-start;
+    margin: 18px 0px 16px 18px;
+}
+
+.tarjetas--grid-item h3{
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 16px;
+    color: var(--just-white);
+    margin-bottom: 8px;
+}
+
+.tarjetas--grid-item p{
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#808080;
+    margin-left: 16px;
+    margin-right: 10px;
+}

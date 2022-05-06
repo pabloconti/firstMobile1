@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css" media="(min-width: 768px)">
 </head>
 <body>
     <header>
@@ -23,11 +24,8 @@
         <section class="tasas">
             <div class="tasas--bitcoin-img"></div>
             <h2>Visibilizamos todas las tasas de cambio.</h2>
-            <p>Traemos informacion en tiempo real de las casas de cambio y las monedas mas importantes del mundo.</p>
+            <p class="parrafo">Traemos informacion en tiempo real de las casas de cambio y las monedas mas importantes del mundo.</p>
             <h3>Corredoras</h3>
-
-            <div class="tasas--flex-corredoras">
-                <div class="izquierda"><span></span></div>
                 <div class="flex-corredoras--tabla">
                     <div class="grid-item"><p class="grid-item--moneda">Bitcoin</p></div>
                     <div class="grid-item"><p class="grid-item--price">$300k<span></span></p></div>
@@ -38,9 +36,9 @@
                     <div class="grid-item"><p class="grid-item--moneda">Stellar</p></div>
                     <div class="grid-item"><p class="grid-item--price">$300k<span></span></p></div>
                 </div>
-                <div class="derecha"><span></span></div>
         </section>
         <section class="prestaciones">
+            <span class="batata-tasas"></span>
             <h2>Creamos un producto sin comparación.</h2>
             <p class="prestaciones--p">Confiable  diseñado para su uso diario.</p>
             <div class="prestaciones--tarjetas">
@@ -66,9 +64,59 @@
                 </div>
             </div>
         </section>
-        <section></section>
-        <section></section>
+        <section class="bitcoinbaby">
+            <img src="/assets/img/bitcoinbaby2x.png" alt="">
+            <h3>Conócelo hoy.</h3>
+        </section>
+        <section class="planes">
+            <div class="intro">
+                <h3>Escoge el plan que mejor se ajuste a ti.</h3>
+                <p>Cualquier plan te da acceso completo a nuetra plataforma.</p>
+            </div>
+            <div class="slides">
+                
+                <div class="plan plan1">
+                    <h4>Pago anual</h4>
+                    <p class="price"><span>$</span> 99</p>
+                    <p class="text">*Ahorras $129 comprando al plan mensual.</p>
+                    <button><b>Escoger este</b><span></span></button>
+                </div>
+                <div class="plan plan2">
+                    <h4>Pago anual</h4>
+                    <p class="price"><span>$</span> 99</p>
+                    <p class="text">*Ahorras $129 comprando al plan mensual.</p>
+                    <button><b>Escoger este</b><span></span></button>
+                </div>
+                <div class="plan plan3">
+                    <h4>Pago anual</h4>
+                    <p class="price"><span>$</span> 99</p>
+                    <p class="text">*Ahorras $129 comprando al plan mensual.</p>
+                    <button><b>Escoger este</b><span></span></button>
+                </div>
+                <div class="plan plan4">
+                    <h4>Pago anual</h4>
+                    <p class="price"><span>$</span> 99</p>
+                    <p class="text">*Ahorras $129 comprando al plan mensual.</p>
+                    <button><b>Escoger este</b><span></span></button>
+                </div>
+                <span onclick="moveRight()" class="arrow right"></span>
+                <span onclick="moveLeft()" class="arrow left"></span>
+            </div>
+            
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer--links">
+            <a href="#">Linkedin</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div class="footer--batata">
+            <span></span>
+            <p>°Batatabit 2022</p>
+        </div>
+        
+    </footer>
+    <script src="scroll.js"></script>
 </body>
 </html>

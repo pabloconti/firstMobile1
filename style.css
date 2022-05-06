@@ -27,6 +27,7 @@ CONVENCION DE ESTILOS:
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    background-color: var(--off-white);
 }
 
 header{
@@ -112,7 +113,7 @@ header p{
 /*Section 1*/
 
 .tasas{
-    height: 910px;
+    height: 810px;
     background-color: var(--off-white);
     display: flex;
     flex-direction: column;
@@ -144,7 +145,7 @@ header p{
 
 }
 
-.tasas p{
+.parrafo{
 
     /*tipografia*/
     font-family: DM Sans;
@@ -154,6 +155,7 @@ header p{
     letter-spacing: 0em;
     text-align: center;
     color: #757575;
+    padding: 0px 5px 0px 5px;
 
 }
 
@@ -170,57 +172,51 @@ header p{
 
 }
 
-.tasas--flex-corredoras{
-    display: flex;
-    width: 100%;
-    height: 250px;
-    flex-direction: row;
-}
-
-.derecha{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 20%;
-    background-color: transparent;
-    margin-right: 0px;
-}
-
-.derecha span{
-    display: inline-block;
-    height: 12px;
-    width: 9px;
-    background-image: url('./assets/icons/right-arrow.svg');
-}
-
 .flex-corredoras--tabla{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    height: 100%;
-    width: 60%;
-    background-color: antiquewhite;
-    border: 1px solid #7575753a;
-
+    height: 250px;
+    max-width: 350px;
+    min-width: 220px;
+    background-color: var(--just-white);
+    border-radius: 10px;    
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.062);
 }
 
 .grid-item{
     display: flex;
     background-color: var(--just-white);
-    border: 1px solid #7575753a;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin: 3px;
 }
 
-.grid-item p{
-    height: 19px;
-    width: 77px;
+.grid-item--moneda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     left: 12px;
-    top: 10px;
     text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: left;
 
+
+}
+
+.grid-item--price {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #757575;
 }
 
 .grid-item--price span{
@@ -231,23 +227,6 @@ header p{
     background-image: url('./assets/icons/trending-up.svg');
 }
 
-
-.izquierda{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scaleX(-1);
-    width: 20%;
-    
-}
-
-.izquierda span{
-    display: inline-block;
-    background-image: url('./assets/icons/right-arrow.svg');
-    height: 12px;
-    width: 9px;
-
-}
 .tasas--grid-corredoras{
     display: grid;
     height: 250px;
@@ -263,10 +242,25 @@ header p{
     background-color: #F7931A;
 }
 
+.grid-item--moneda{
+    color: rgb(199, 198, 198);
+}
+
+.batata-tasas{
+    position: relative;
+    display: inline-block;
+    background-image: url(/assets/icons/batata.svg);
+    width: 50px;
+    height: 34px;
+    margin-left: calc(50% - 21px);
+    top: -13px;
+    
+}
+
 /*Section 2*/
 
 .prestaciones{
-    height: 910px;
+    height: 970px;
     background-color: var(--warm-black);
 }
 
@@ -275,7 +269,7 @@ header p{
     line-height: 26px;
     text-align: center;
     color: var(--just-white);
-    padding: 20px 0px 20px 0px;
+    padding: 80px 0px 20px 0px;
 }
 
 .prestaciones--p{
@@ -292,12 +286,14 @@ header p{
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
     padding: 30px;
+    justify-content: center;
 }
 
 .tarjetas--grid-item{
     display: flex;
     flex-direction: column;
     height: 152px;
+    max-width: 700px;
     background-color: var(--warm-black1);
     box-shadow: 0px 4px 8px 0px #00000029;
     border-radius: 4px;
@@ -341,3 +337,247 @@ header p{
     margin-left: 16px;
     margin-right: 10px;
 }
+
+/**Section 3**/
+
+.bitcoinbaby{
+    width: 100%;
+    height: 390px;
+}
+
+.bitcoinbaby img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+
+}
+
+.bitcoinbaby h3{
+    position: absolute;
+    top: 2250px;
+    left: calc(50% - 140px);
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--just-white);
+}
+
+
+/*Setion 4*/
+
+.intro{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    background-color: var(--off-white);
+    margin-top: 0px;
+    gap: 30px;
+}
+
+.intro h3{
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.intro p{
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.slides{
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-x:contain ;
+    gap: 20px;
+    height: 300px;
+    width: 100%;
+    padding: 0px 30% 0px 30%;
+    margin: 0px 0px 50px 0px;
+    
+
+}
+
+.slides::-webkit-scrollbar {
+    display: none;
+}
+
+.plan{
+    height: 247px;
+    min-width: 190px;
+    max-width: 250px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 8px 0px #59491E29;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    
+
+}
+
+.plan h4{
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.price{
+    font-family: Inter;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: -0.08em;
+    text-align: left;
+
+}
+.plan p span{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+
+.text{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #757575;
+
+}
+
+.plan button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 151px;
+    height: 48px;
+    border: 2px solid var(--bitcoin-orange);
+    text-align: center;
+
+}
+
+.plan button span{
+    display: inline-block;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    width: 24px;
+    height: 24px;
+
+}
+
+.recomendado{
+    display: flex;
+    position: sticky;
+    background-color: var(--bitcoin-orange);
+    width: 101px;
+    height: 31px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: var(--just-white);
+    
+}
+
+.arrow{
+    position: absolute;
+    background-image: url('./assets/icons/right-arrow.svg');
+    width: 8px;
+    height: 12px;
+}
+
+.right{
+    right:10% ;
+}
+
+.left{
+    left: 10%;
+    transform: scaleX(-1);
+}
+
+/*Footer*/
+
+footer{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bitcoin-orange);
+    gap: 30%;
+}
+
+.footer--links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer--links a{
+    text-decoration: none;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--just-white);
+
+}
+
+.footer--batata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer--batata span{
+    background-image: url('./assets/icons/batata.svg');
+    height: 34px;
+    width: 50px;
+}
+
+.footer--batata p{
+    color: var(--just-white);
+}
+
